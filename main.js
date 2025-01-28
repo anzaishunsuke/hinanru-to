@@ -10,7 +10,7 @@ const apiKey = 'github_pat_11AVYTM2A03RCgUAoBKMxJ_ezPdhmm8qG4OTUen6EWhb1X62mqdJd
 
 map.on('load', async () => {
   // GeoJSONデータを追加
-  const geojsonData = await fetch('./hinanjyo.geojson').then(response => response.json());
+  const geojsonData = await fetch('.hinanjyo.geojson').then(response => response.json());
 
   // 避難場所のアイコンを地図に追加
   const iconImage = await map.loadImage('.img/icon.png');
