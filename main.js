@@ -6,14 +6,14 @@ var map = new maplibregl.Map({
 });
 
 // APIキーを設定
-const apiKey = '5b3ce3597851110001cf62483d4f0c5c26f94f3291f93f9de89c0af7';  // 取得したAPIキーをここに記入
+const apiKey = '5b3ce3597851110001cf6248ce0a469b209e4b9a9eb3d774dce766db';  // 取得したAPIキーをここに記入
 
 map.on('load', async () => {
   // GeoJSONデータを追加
-  const geojsonData = await fetch('.hinanjyo.geojson').then(response => response.json());
+  const geojsonData = await fetch('hinanjyo.geojson').then(response => response.json());
 
   // 避難場所のアイコンを地図に追加
-  const iconImage = await map.loadImage('.img/icon.png');
+  const iconImage = await map.loadImage('img/icon.png');
   map.addImage('facility_icon', iconImage.data);
 
   // GeoJSONデータを地図に追加
