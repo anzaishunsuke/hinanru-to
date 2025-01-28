@@ -6,7 +6,7 @@ var map = new maplibregl.Map({
 });
 
 // APIキーを設定
-const apiKey = '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';  // 取得したAPIキーをここに記入
+const apiKey = '5b3ce3597851110001cf62483d4f0c5c26f94f3291f93f9de89c0af7';  // 取得したAPIキーをここに記入
 
 map.on('load', async () => {
   // GeoJSONデータを追加
